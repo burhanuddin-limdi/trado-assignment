@@ -12,6 +12,7 @@ import { FeaturesSectionComponent } from './components/features-section/features
 import { BottomProductsSectionComponent } from './components/bottom-products-section/bottom-products-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowseCategoriesItemComponent } from './components/browse-categories-item/browse-categories-item.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BrowseCategoriesItemComponent } from './components/browse-categories-it
     FeaturesSectionComponent,
     BottomProductsSectionComponent,
     BrowseCategoriesItemComponent,
+    SidebarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

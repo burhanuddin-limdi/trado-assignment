@@ -3,12 +3,12 @@
     <img src="assets/ele.mart.svg" alt="" class="h-10 hidden lg:block" />
     <div class="flex items-center lg:ml-5 xl:ml-[110px] w-full">
       <input
-        class="focus:outline-none border border-[#c6c6c6] px-5 py-3 flex-1 lg:max-w-[495px]"
+        class="focus:outline-none border border-[#c6c6c6] px-5 py-3 flex-1 lg:max-w-[495px] text-sm placeholder:text-sm"
         type="text"
         placeholder="Search for products..."
       />
       <div
-        class="border border-l-0 border-[#c6c6c6] px-5 py-3 cursor-pointer relative"
+        class="border border-l-0 border-[#c6c6c6] px-5 py-3 cursor-pointer relative text-sm"
         (mouseleave)="toggle()"
         (mouseenter)="toggle()"
       >
@@ -28,11 +28,13 @@
           </p>
         </div>
       </div>
-      <button class="text-white bg-[#1A9FFC] px-5 py-3 border border-[#1A9FFC]">
+      <button
+        class="text-white bg-[#1A9FFC] px-4 md:px-5 py-3 border border-[#1A9FFC]"
+      >
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </div>
-    <div class="flex items-center gap-8 ml-5 hidden lg:flex">
+    <div class="items-center gap-8 ml-5 hidden lg:flex">
       <button class="flex items-center gap-2">
         <p class="text-3xl">
           <i class="fa-solid fa-user"></i>

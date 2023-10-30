@@ -1,10 +1,12 @@
-<nav class="bg-[#f3f3f3] flex justify-center items-center p-3 text-[#9c9c9c]">
+<nav
+  class="bg-[#f3f3f3] flex justify-center items-center p-3 text-[#9c9c9c] sticky top-0"
+>
   <div class="flex-wrap flex justify-between items-start container">
     <div class="flex items-center gap-2">
       <i class="fa-solid fa-shop"></i>
       <p>Up to 70% off the entire store!</p>
     </div>
-    <div class="flex items-center gap-5">
+    <div class="lg:flex items-center gap-5 hidden">
       <select name="" id="" class="bg-transparent focus:outline-none">
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
@@ -24,5 +26,13 @@
         <option value="Arabic">Arabic</option>
       </select>
     </div>
+    <button (click)="toggle()">
+      <i class="fa-solid fa-bars text-lg block lg:hidden"></i>
+    </button>
   </div>
 </nav>
+
+<app-sidebar
+  [@openClose]="isOpen ? 'open' : 'closed'"
+  (closeSidebar)="toggle()"
+></app-sidebar>
