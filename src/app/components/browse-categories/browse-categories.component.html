@@ -1,0 +1,23 @@
+<div class="bg-[#f3f3f3] flex flex-col max-h-[586px] overflow-auto">
+  <div
+    (click)="toggle()"
+    class="flex flex-1 items-center gap-4 bg-[#EE3524] text-white px-6 py-4 sm:py-6 cursor-pointer"
+  >
+    <p><i class="fa-solid fa-bars"></i></p>
+    <p>Browse Categories</p>
+  </div>
+
+  <app-browse-categories-item
+    class="hidden xl:block"
+    *ngFor="let category of categories"
+    [category]="category"
+  >
+  </app-browse-categories-item>
+  <app-browse-categories-item
+    [@openClose]="isOpen ? 'open' : 'closed'"
+    class="block xl:hidden"
+    *ngFor="let category of categories"
+    [category]="category"
+  >
+  </app-browse-categories-item>
+</div>

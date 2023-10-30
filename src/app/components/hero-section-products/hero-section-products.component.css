@@ -1,0 +1,7 @@
+.camera_shadow {
+  filter: drop-shadow(-35px 32px 22px #a1a1a1);
+}
+
+.other_shadow {
+  filter: drop-shadow(-12px 16px 5px #c5c5c5);
+}

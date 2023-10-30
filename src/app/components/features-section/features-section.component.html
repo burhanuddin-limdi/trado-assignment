@@ -1,0 +1,18 @@
+<div class="container m-auto my-10">
+  <div class="flex justify-evenly flex-wrap">
+    <div
+      *ngFor="let feature of features"
+      class="flex items-center gap-4 basis-1/2 lg:basis-1/4 mx-auto"
+    >
+      <div
+        class="p-4 rounded-full bg-[#FEF1F0] text-[#EE3524] aspect-square w-14 h-14 text-center my-3 lg:my-0"
+      >
+        <i class="{{ feature.icon }}"></i>
+      </div>
+      <div class="">
+        <p>{{ feature.title }}</p>
+        <p class="text-xs text-[#9c9c9c]">{{ feature.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
